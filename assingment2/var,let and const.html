@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            "var","let" and "const"
+        </title>
+        
+    </head>
+    <body>
+        <h1>variables:-</h1>
+        <p>There are issues associated with variables declared with var, though. That is why it was necessary for new ways to declare variables to emerge. First, let's get to understand var more before we discuss those issues.
+            
+        where these variables are available for use. "var" declarations are globally scoped or function/locally scoped.</p>
+        <p>Example:- var greeter = "hey hi";
+                  var greeter = "say Hello instead";
+                  console.log (greeter);
+
+                  var greeter = "hey hi"; 
+                  greeter = "say Hello instead";
+                  console.log (greeter);</p>
+
+        <script src="var.js"></script>
+
+        <h2>let:-</h2>
+        <p>let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var declarations. It also solves the problem with var that we just covered. Let's consider why this is so.</p>
+
+        <p>Example:- let greeting = "say Hi";
+                    greeting = "say Hello instead";
+                    console.log (greeter);
+
+            <script src="let1.js"></script>
+                
+                    let greeting = "say Hi";
+                    let greeting = "say Hello instead";
+                    console.log (let greeter);</p>
+                    // error: Identifier 'greeting' has already been declared
+            <script src="let2.js"></script>
+        <h3>Const:-</h3>
+        <p>Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.</p>
+
+        <p>Example:- const greeting = "say Hi";
+                     greeting = "say Hello instead";</p>
+                     // error: Assignment to constant variable. 
+
+            <script src="const1.js"></script>
+
+        <p>Example:- const greeting = "say Hi";
+                    const greeting = "say Hello instead";</p>
+                    // error: Identifier 'greeting' has already been declared
+            <script src="const2.js"></script>
+    </body>
+</html>
